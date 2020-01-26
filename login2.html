@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Help</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="index.css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+<body>
+	<nav class="navbar navbar-inverse ">
+	<div class="container-fluid">
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="color: white;"  >E.C</a>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      <li><a href="home.html"> Home </a></li>
+      <li class=""><a href="help.html"> Help </a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Phones <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item rounded" href="under10k.html">Under 10K</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Under 20K</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Under 30K</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Under 40K</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Above 50K</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Laptops <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item rounded" href="under10k.html">HP</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Dell</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Asus</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Apple</a></li>
+          <li><a class="dropdown-item rounded" href="under10k.html">Microsoft</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup2.html" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login2.html" class="active"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</div>
+</nav>	
+
+    <div class="container rounded">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="margin-top:70px;">   
+    <div class="panel panel-primary" >
+    <div class="panel-heading">
+      <a href="home.html"><button class=" btn-danger pull-right btn-sm " type="button"> Home </button></a>
+    <h3 style="text-align: center;">LOG IN</h3>
+    </div>
+    <div class="panel-body">
+  <form role="form" action="login_submit.html" method="POST">
+    <div class="form-group">
+    <label class="font-weight-bold"> <br>Email <span class="text-danger"></span></label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email" required>
+    </div>
+    <div class="form-group">
+    <label class="font-weight-bold">Password <span class="text-danger"></span></label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="***********" required>
+    </div>
+    <div class="form-group">
+    <label><input type="checkbox" name="condition" id="condition"> Remember me.</label>
+    </div>
+    <div class="form-group">
+    <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
+    </div>
+  </form>
+    </div>
+  <div class="panel-footer"><p>Don't have an account? <a href="signup2.html"> Register  </a> </p></div>
+</div>
+</div>
+ <div class="col-md-4"></div>
+</div>
+</div>
+</body>
+ <style>
+body {
+  width: 100%;
+  height: 400px;
+  background-image: url('samnb1.jpg');
+  background-size: cover ;
+  background-repeat: no-repeat;
+</style>
+</html>

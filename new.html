@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>help</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="index.css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" alt="Logo" style="width:40px;">
+  </a>
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" style="color:black;" data-toggle="tab" href="#home">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"style="color:black;font-size:16px;" data-toggle="tab" href="#menu1">Help</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color:black;" data-toggle="tab" href="#menu2">Signup</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+    
+
+<body>
+    <div class="container rounded">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="margin-top:50px;">   
+    <div class="panel panel-primary" >
+    <div class="panel-heading">
+    <h3 style="text-align: center;">LOGIN</h3>
+    </div>
+    <div class="panel-body">
+  <form role="form" action="login_submit.html" method="POST">
+    <div class="form-group">
+    <label class="font-weight-bold"> <br>Email <span class="text-danger"></span></label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email" required>
+    </div>
+    <div class="form-group">
+    <label class="font-weight-bold">Password <span class="text-danger"></span></label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="***********" required>
+    </div>
+    <div class="form-group">
+    <label><input type="checkbox" name="condition" id="condition"> Remember me.</label>
+    </div>
+    <div class="form-group">
+    <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
+    </div>
+  </form>
+    </div>
+  <div class="panel-footer"><p>Don't have an account? <a href="signup2.html"> Register  </a> <a href="home.html">   <button class=" btn-primary pull-right btn-sm " type="button"> Home </button> </a></p></div>
+</div>
+</div>
+ <div class="col-md-4"></div>
+</div>
+</div>
+
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+  
+
+
+    <div class="container rounded">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="margin-top:50px;">   
+    <div class="panel panel-primary" >
+    <div class="panel-heading">
+      <a href="home.html"><button class=" btn-danger pull-right btn-sm " type="button"> Home </button></a>
+    <h4 style="text-align: center;">Help & Feedback</h4>
+    </div>
+    <div class="panel-body">
+  <form method="post" id= "helpform">
+   <div class="form-group">
+       <label class="font-weight-bold">Name <span class="text-danger"></span></label>
+  <input type="text" id="name" name="Name" class="form-control" placeholder="Enter your name.."required>
+  </div>
+   <div class="form-group">
+   <label class="font-weight-bold">Email <span class="text-danger"></span></label>
+  <input type="text" name="email" id="Email" class="form-control" placeholder="Enter valid email" required>
+   </div>
+   <div class="form-group">
+   <label class="font-weight-bold">Help & Feedback <span class="text-danger"></span></label>
+   <textarea id="subject" name="subject" class="form-control" placeholder="Write here.." style="height:200px"></textarea>
+   </div>
+   <div class="form-group">
+   <input type="submit" name="submit" value="Submit" class="btn btn-block btn-success">
+   </div>
+   </form>
+    
+</div>
+</div>
+</div>
+ <div class="col-md-3"></div>
+</div>
+</div>
+
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+
+  
+
+    <div class="container rounded">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="margin-top:50px;">   
+        <div class="panel panel-primary" >
+        <div class="panel-heading">
+        <h3 style="text-align: center;">SIGN UP</h3>
+        </div>
+        <div class="panel-body">
+      <form  action="signup_script.html" method="POST">
+          <div class="form-group">
+          <label class="font-weight-bold">Name <span class="text-danger">
+          </span></label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your name" required>
+          </div>
+          <div class="form-group">
+          <label class="font-weight-bold">Email <span class="text-danger">
+          </span></label>
+          <input type="email" name="signupemail" id="signupemail" class="form-control" placeholder="Enter valid email" required>
+          </div>
+          <div class="form-group">
+          <label class="font-weight-bold">Password <span class="text-danger"></span></label>
+            <input type="password" name="signuppassword" id="signuppassword" class="form-control" placeholder="***********" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
+          </div>
+          <div class="form-group">
+          <label class="font-weight-bold">Confirm Password <span class="text-danger"></span></label>
+          <input type="password" name="signupcpassword" id="signupcpassword" class="form-control" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="***********" required>
+          </div>
+          <div class="form-group">
+          <input type="submit" name="signupsubmit" value="Sign Up" class="btn btn-block btn-primary">
+          </div>
+          </form>
+           <a href="home.html"><button class=" btn-primary pull-right btn-sm " type="button"> Home </button></a>
+          </div>
+</div> 
+</div>
+ <div class="col-md-4"></div>
+</div>
+</div>
+
+    </div>
+  </div>
+</nav>
+     <style>
+body {
+  width: 100%;
+  height: 400px;
+  background-image: url('iphone11promax2.jpg');
+  background-size: cover ;
+  background-repeat: no-repeat;
+</style>
+</body>
+</html>
